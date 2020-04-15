@@ -3,7 +3,7 @@ from application.extension import db
 from application.views.user import user_page
 
 app = Flask('Blockchain_internship_program')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:QQ19981212@127.0.0.1/python'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:lilin002057@127.0.0.1/python'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 app.secret_key = "lalskskskskksksjsj"

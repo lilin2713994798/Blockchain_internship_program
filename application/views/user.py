@@ -29,9 +29,11 @@ def login():
         # print('user.password:', user.password)
         if user and user.password == pwd:
             session['user_id'] = user.id
+            if user.role == 0:
+                return '0'
             # return redirect(url_for('user_page.users'))
             return '1'
         else:
             # flash('登陆失败')
-            return '0'
+            return '4'
             # return render_template('user/login.html')
